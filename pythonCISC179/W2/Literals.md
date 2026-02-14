@@ -102,7 +102,7 @@ Please describe the challenges you faced during the exercise.
 
 ```python
 
-# Attempting math in my head was difficult.
+# Attempting the math in my head was difficult.
 
 # I mistyped a lot of things in my interpreter and recieved a lot of errors.
 
