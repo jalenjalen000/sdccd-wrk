@@ -23,29 +23,29 @@ What will the output be without using Python? Aim for 80% accuracy.
 
 ```python
 print(5 + 2 - 2)
-# ______________________
+# 5
 print(5 / 2)
-# ______________________
+# 2.5
 print(6 // 2) # // integer division
-# ______________________
+# 3
 print(2. * 3)
-# ______________________
+# 6.0
 print(2 < 4)
-# ______________________
+# true
 print(2 >= 2)
-# ______________________
+# true
 print("Hello"+"World")
-# ______________________
+# HelloWorld
 print("bla" * 3)
-# ______________________
+# blablabla
 print(2 * 3 ** 3)
-# ______________________
+# 54
 print(5 * 25 // 13 + 100 / 2 % 13 // 2)
-# ______________________
+# 14.0
 print(2 * 3 % 5)
-# ______________________
+# 1
 print((2 % -4), (2 % 4), (2 ** 3 ** 2))
-# ______________________
+# -2 2 512
 ```
 
 Please verify using Python to determine if you have achieved at least 80% correct answers.
@@ -56,19 +56,19 @@ What will the output be without using Python? Aim for 80% accuracy.
 
 ```python
 type("Hello")
-# ______________________
+# <class 'str'>
 type(1+"2")
-# ______________________
+# typeError
 type(1.)
-# ______________________
+# <class 'float'>
 type('A')
-# ______________________
+# <class 'str'>
 type(500)
-# ______________________
+# <class 'int'>
 type(True)
-# ______________________
+# <class 'bool'>
 type("False")
-# ______________________
+# <class 'str'>
 ```
 
 Please verify using Python to determine if you have achieved at least 80% correct answers.
@@ -77,7 +77,15 @@ Please verify using Python to determine if you have achieved at least 80% correc
 
 a) Write your arithmetic expression that uses at least one operator from each group and prove the operator's precedence. For example ```5 * 25 % 13 + 100 / -2 * 13 // 2 ** 3```
 
+-2 ** 3 * 4 // 3 + 5
+
+1. 2 ** 3 = 8
+2. = -8
+3. -8 * 4 =-32
+4. -32 + 5 = -27
 b) What will the output be without using Python after writing your arithmetic expression? Use the table below for your reference.
+
+-6
 
 c) Please verify using Python to determine if you have done it correctly.
 
@@ -94,9 +102,9 @@ Please describe the challenges you faced during the exercise.
 
 ```python
 
-# _________________________________________________________________________________________________
+# Attempting math in my head was difficult.
 
-# _________________________________________________________________________________________________
+# I mistyped a lot of things in my interpreter and recieved a lot of errors.
 
 # _________________________________________________________________________________________________
 
