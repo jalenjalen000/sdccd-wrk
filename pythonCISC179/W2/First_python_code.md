@@ -50,7 +50,7 @@ e. By default, the ```flush``` is disabled but ```print()``` output behaves like
 Please describe the challenges you faced during the exercise.
 
 ```python
-# _________________________________________________________________________________________________
+# I forgot about \n triggering flushes and had to review the video.
 
 # _________________________________________________________________________________________________
 
