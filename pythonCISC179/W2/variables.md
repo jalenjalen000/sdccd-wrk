@@ -47,15 +47,23 @@ var1 = 100
 ```
 
 ```
-# Write your code here
+var1 = 10
+print (hex(id(var1)))
+var1 = 100
+print (hex(id(var1)))
 ```
 
 You should see two distinct addresses for var1. Explain why there are two different addresses and what happened to the first one.
 
+Unlike C++, Python stores a certain value under one address the first time it's defined. var1's value changed from 10 to 100, so that 100 was assigned a new address upon creation. Any other variables equal to 10 will take take the first address.
+
 ```
 var2 = 100
-# Write your print statement
+print (hex(id(var2)))
+
 # Check the memory address of var2. Did the Python interpreter assign a new memory address or reuse the existing one?
+
+The interpreter used the same address as var1.
 ```
 
 ```
@@ -80,17 +88,16 @@ print(hex(id(str1[0])), hex(id(str1[1])))  # where 0 is the first index and 1 is
 ```
 
 | Address in hexadecimal | Char |
-| ---------------------- | ---- |
-| #                      |      |
-| #                      |      |
-| #                      |      |
-| #                      |      |
-| #                      |      |
-| #                      |      |
-| #                      |      |
-| #                      |      |
-| #                      |      |
-| #                      |      |
+| #0x7ffbfd155448           H           
+| #0x7ffbfd1559b8           E         
+| #0x7ffbfd155b08           L         
+| #0x7ffbfd155b08           L          
+| #0x7ffbfd155b98           O           
+| #0x7ffbfd155718           W          
+| #0x7ffbfd155b98           O          
+| #0x7ffbfd155c28           R         
+| #0x7ffbfd155b08           L         
+| #0x7ffbfd155988           D           
 
 ### Problem-solving
 
@@ -100,12 +107,15 @@ Let the variable `x` be `dog` and the variable `y` be `cat`. Write the values re
 - "the " + x + " chases the " + y
 - x * 4
 
-Write your answer here
+dogcat
+the dog chases the cat
+dogdogdogdog
 
 If `x = 50`. Use an assignment statement to increment the value of `x` by 1.
 
 ```
-# Write your code here
+# x + 1
+
 ```
 
 ### Troubleshooting
@@ -118,18 +128,24 @@ c. `!var_1 = 200`
 d. `print = "print me"`
 e. `False = 0`
 
-
-
-Write your answer here
+a. hello = "hello"
+This is okay because quotes are used correctly and a string can have the same contents as its name.
+b. _var = 100
+Still works because string names can use underscores. It's a number, so no need for quotes.
+c. var_1 = 200
+Exclamation points can't be used. Only underscores, numbers and letters.
+d. print1 = "print me"
+Destroys the native "print" function if you redefine it.
+e. false = 0 
+You can't use "False" as a variable name. It's an existing keyword that cannot be altered.
 
 ## Challenges
 
 Please describe the challenges you faced during the exercise.
 
 ```python
-# _________________________________________________________________________________________________
-
-# _________________________________________________________________________________________________
+# Memorizing the statement for returning an address. It's a little complicated at first glance.
+# I forgot a few rules for variable definitions.
 
 # _________________________________________________________________________________________________
 
