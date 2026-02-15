@@ -20,7 +20,9 @@ a. Write a program that prompts the user to enter the weight of a person in kilo
 
 ```python
 # This is my code
-print("Hello World")
+kg = float(input("Enter weight in kilograms..."))
+lbs = kg * 2.2
+print ("Your weight in lbs:", lbs)
 ```
 
 b. Interest on a credit card's unpaid balance is calculated using the average daily balance. Suppose that $netBalance$ is the balance shown in the bill, $payment$ is the payment made, $d1$ is the number of days in the billing cycle, and $d2$ is the number of days payment is made before biling cycle. Then, the average daily balance is: $$averageDailybalance = (netBalance \times d1 - payment \times d2)/d1$$.
@@ -29,13 +31,28 @@ If the interest rate per month is, say, 0.0152, then the interest on the unpaid 
 
 ```python
 # Here is my answer
+netbalance = float(input("Enter net balance: "))
+payment = float(input("Enter payment made: "))
+d1 = int(input("Enter the number of days in the billing cycle: "))
+d2 = int(input("Enter the number of days payment was made before the billing cycle: "))
+interestrate = float(input("Enter interest rate per month: "))
+averagedailybalance = (netbalance * d1 - payment * d2) / d1
+interest = averagedailybalance * interestrate
+print("Average Daily Balance:", averagedailybalance)
+print("Interest on unpaid balance:", interest)
 ```
-
-
 
 Write a program that accepts as input $netBalance$, $payment$, $d1$, $d2$, and $interest rate per month$. The program outputs the interest.
 
 c. Two cars A and B leave an intersection at the same time. Car A travels west at an average speed of x miles per hour and car B travels south at an average speed of y miles per hour. Write a program that prompts the user to enter the average speed of both the cars and the elapsed time (in hours and minutes) and outputs the (shortest) distance between the cars.
+
+x = float(input("Enter speed of car A (mph): "))
+y = float(input("Enter speed of car B (mph): "))
+hours = int(input("Enter hours: "))
+minutes = int(input("Enter minutes: "))
+time = hours + minutes / 60
+distance = ((x * time)**2 + (y * time)**2)**0.5
+print("Distance between the cars:", distance)
 
 ### 2. Troubleshooting
 
@@ -54,15 +71,10 @@ e. False = 0
 Please describe the challenges you faced during the exercise.
 
 ```python
-29eurgue rfgoieqnrfoinq erofin qeoirfn
-qerg
-qerg
-eq rgqe
- rgqe
 
-# _________________________________________________________________________________________________
+# Typos.
 
-# _________________________________________________________________________________________________
+# Figuring out and keeping track of the math sequence. 
 
 # _________________________________________________________________________________________________
 
