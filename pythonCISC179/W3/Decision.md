@@ -128,6 +128,17 @@ else:
 ### 5. Problem-solving
 a. Find the largest three integers just using ```if``` statements. Take user inputs and display the result. 
 
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+if num1 > num2 and num1 > num3:
+    largest = num1
+if num2 > num1 and num2 > num3:
+    largest = num2
+if num3 > num1 and num2:
+    largest = num3
+print ("Largest value is:", largest)
+
 b. Identify multiple methods to determine if a number is even or odd. The user will input an integer, and the output will indicate whether it's "odd" or "even." The code should be organized into sections, with comments separating each part. For example
 
 ```python
