@@ -38,7 +38,20 @@ Identify how many keys you need to create a dictionary.
 **Restrictions: Do not use functions and/or exceptions in this exercise**
 
 ```
-# Write your code here.
+my_user_dict = {
+    "name" : input("Name:"),
+    "age" : int(input("Age:")),
+    "ssn" : input("SSN:"),
+    "date of birth" : input("Date of birth:"),
+    "address" : input("Address:"),
+    "city" : input("City:"),
+    "state" : input("State:"),
+    "zip" : input("Zip:"),
+    "phone" : input("Phone:"),
+    "email" : input("Email:"),
+}
+print(my_user_dict)
+choice = input("Do you want to continue? (y/n)")
 ```
 
 **Converting tuples into a dictionary**
