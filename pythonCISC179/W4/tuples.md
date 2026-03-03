@@ -134,6 +134,7 @@ Please describe the challenges you faced during the exercise.
 
 ```python
 # The extended unpacking feature was somewhat confusing.
+```
 
 ## Extended unpacking details
 
