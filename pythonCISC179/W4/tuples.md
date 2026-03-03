@@ -135,6 +135,27 @@ Please describe the challenges you faced during the exercise.
 ```python
 # The extended unpacking feature was somewhat confusing.
 
+## Extended unpacking details
+
+Extended unpacking in Python allows you to assign elements from an iterable to variables while using a starred variable (`*`) to capture multiple remaining values. For example:
+
+```python
+a, *b = [1, 2, 3, 4]
+```
+
+Here, `a` gets `1`, and `b` gets `[2, 3, 4]`. The starred variable always collects the extra elements into a list.
+
+You can also place the star in the middle:
+
+```python
+a, *b, c = [1, 2, 3, 4, 5]
+```
+
+Now, `a` is `1`, `b` is `[2, 3, 4]`, and `c` is `5`.
+
+Only one starred expression is allowed per unpacking statement. Extended unpacking is useful when working with sequences of variable length while keeping certain positions fixed.
+
+
 # 
 
 # _________________________________________________________________________________________________
